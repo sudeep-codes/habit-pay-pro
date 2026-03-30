@@ -61,7 +61,7 @@ const SleepLog = () => {
   return (
     <div className="flex flex-col h-full">
       <div className="flex justify-between items-end mb-4 border-b border-matrix-dim pb-1">
-        <h2 className="text-xl uppercase tracking-widest">&gt; SYSTEM.SLEEP_LOG</h2>
+        <h2 className="text-xl uppercase tracking-widest">&gt; SLEEP TRACKER</h2>
         <span className="text-xs text-matrix-green animate-pulse">AVG: {avgSleep} HRS</span>
       </div>
 

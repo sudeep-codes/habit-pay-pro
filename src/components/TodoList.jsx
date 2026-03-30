@@ -44,7 +44,7 @@ const TodoList = () => {
   return (
     <div className="flex flex-col h-full">
       <h2 className="text-xl mb-4 border-b border-matrix-dim inline-block uppercase tracking-widest">
-        &gt; SYSTEM.TODO_LIST
+        &gt; TODO LIST
       </h2>
 
       <form onSubmit={addTask} className="mb-4 flex gap-2">

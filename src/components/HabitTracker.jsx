@@ -57,7 +57,7 @@ const HabitTracker = () => {
   return (
     <div className="flex flex-col h-full overflow-hidden">
       <div className="flex justify-between items-end mb-4 border-b border-matrix-dim pb-1">
-        <h2 className="text-xl uppercase tracking-widest">&gt; SYSTEM.PROTOCOLS</h2>
+        <h2 className="text-xl uppercase tracking-widest">&gt; 30 DAYS HABIT TRACKER</h2>
         <span className="text-xs text-matrix-dim">GETTING 1% BETTER EACH DAY</span>
       </div>
 
