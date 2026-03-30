@@ -1,0 +1,161 @@
+/* Custom hacker scrollbar (Default Matrix) */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #000000;
+  
+}
+::-webkit-scrollbar-thumb {
+  background: #00FF41;
+}
+
+/* Ensure our dark theme fallback stays locked */
+body {
+  background-color: #000000 !important;
+  color: #00FF41 !important;
+  font-family: monospace;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* =========================================
+   DAY PROTOCOL / RETRO INDUSTRIAL THEME
+   ========================================= */
+.theme-light {
+  background-color: #cfc486 !important; /* Dirty yellow / mustard background */
+  color: #082f49 !important; /* Deep navy text */
+}
+
+/* Target and override the scrollbar to be dirty yellow and dark blue */
+.theme-light ::-webkit-scrollbar-track {
+  background: #cfc486 !important;
+}
+.theme-light ::-webkit-scrollbar-thumb {
+  background: #1d4ed8 !important; /* Dark blue scrollbar thumb */
+  border-radius: 0px;
+}
+
+/* Transform cards to a slightly lighter dirty yellow with a hard, retro shadow */
+.theme-light .bg-black, 
+.theme-light .bg-black\/80 {
+  background-color: #dfd59e !important; 
+  box-shadow: 4px 4px 0px #082f49 !important; /* Hard dark blue shadow */
+  border: 2px solid #082f49 !important; /* Thick dark blue border */
+}
+
+/* Nuke the glowing neon shadows and replace with solid dark blue drops */
+.theme-light .drop-shadow-\[0_0_10px_rgba\(0\,255\,65\,0\.5\)\] {
+  filter: drop-shadow(2px 2px 0px rgba(8, 47, 73, 0.8)) !important; 
+}
+.theme-light .shadow-\[0_0_15px_rgba\(0\,255\,65\,0\.1\)\] {
+  box-shadow: none !important; /* Disabled since cards have the hard retro shadow now */
+}
+
+/* 1. Fix Text and Border Greens -> Dark Blue */
+.theme-light .text-matrix-green { color: #1d4ed8 !important; text-shadow: none !important; }
+.theme-light .border-matrix-green { border-color: #1d4ed8 !important; }
+
+/* 2. Fix Background Greens & Checkboxes -> Dark Blue */
+.theme-light .bg-matrix-green { background-color: #1d4ed8 !important; }
+.theme-light .hover\:bg-matrix-green:hover { background-color: #082f49 !important; color: #dfd59e !important; }
+.theme-light .shadow-\[0_0_5px_\#00FF41\] { box-shadow: none !important; } /* Removes checkbox glow */
+
+/* 3. Fix Dim Greens -> Navy / Muted Dark Blue */
+.theme-light .text-matrix-dim { color: #1e3a8a !important; }
+.theme-light .border-matrix-dim { border-color: #082f49 !important; }
+.theme-light .border-matrix-dim\/50,
+.theme-light .border-matrix-dim\/30,
+.theme-light .border-matrix-dim\/20,
+.theme-light .border-matrix-dim\/10 { border-color: rgba(8, 47, 73, 0.3) !important; }
+.theme-light .bg-matrix-dim\/20 { background-color: rgba(29, 78, 216, 0.1) !important; }
+.theme-light .bg-matrix-dim\/30 { background-color: rgba(29, 78, 216, 0.2) !important; }
+.theme-light .hover\:bg-matrix-dim\/10:hover,
+.theme-light .hover\:bg-matrix-dim\/30:hover { background-color: rgba(29, 78, 216, 0.15) !important; }
+
+/* 4. Force Recharts SVG Elements -> Dark Blue (Sleep Graph) */
+.theme-light .recharts-line .recharts-line-curve { stroke: #1d4ed8 !important; stroke-width: 3px !important; }
+.theme-light .recharts-line .recharts-line-dot { stroke: #1d4ed8 !important; fill: #dfd59e !important; }
+.theme-light .recharts-active-dot circle { fill: #1d4ed8 !important; }
+.theme-light .recharts-cartesian-axis-tick-value { fill: #082f49 !important; font-weight: bold !important; }
+.theme-light .recharts-tooltip-wrapper .bg-black { background-color: #dfd59e !important; border: 2px solid #082f49 !important; }
+
+/* 5. Style Inputs & Buttons (Sharp, blocky aesthetics) */
+.theme-light input, 
+.theme-light select {
+  background-color: #ebe3bb !important; /* Very light yellow for input fields */
+  color: #082f49 !important;
+  border: 1px solid #082f49 !important;
+  border-radius: 0px !important; /* Sharp corners */
+}
+.theme-light input:focus, 
+.theme-light select:focus { 
+  border-color: #1d4ed8 !important; 
+  outline: 2px solid #1d4ed8 !important; 
+  outline-offset: -1px !important; 
+}
+.theme-light button { border-radius: 0px !important; } /* Sharp corners for buttons */
+
+/* 6. The Final Sweep: Force Headings and CDN Utilities to Dark Navy */
+.theme-light h1,
+.theme-light h2,
+.theme-light h3,
+.theme-light h4 {
+  color: #082f49 !important;
+}
+
+/* This specifically targets and kills the root Tailwind class in Day Mode */
+.theme-light.text-\[\#00FF41\],
+.theme-light .text-\[\#00FF41\] {
+  color: #082f49 !important;
+}
+
+/* 7. The Opacity Sweep: Catch the Expense Manager Note */
+.theme-light .text-matrix-green\/70 {
+  color: rgba(29, 78, 216, 0.8) !important; /* Muted Dark Blue */
+}
+
+/* =========================================
+   THE FINAL SWEEP: SCROLLBAR & SVG DOTS
+   ========================================= */
+
+/* 1. Global Scrollbar Annihilator (Catches the main window) */
+body.theme-light::-webkit-scrollbar-thumb,
+.theme-light ::-webkit-scrollbar-thumb,
+::-webkit-scrollbar-thumb {
+  /* We use a CSS variable trick here so the default doesn't override it */
+}
+body.theme-light::-webkit-scrollbar-thumb,
+.theme-light ::-webkit-scrollbar-thumb {
+  background-color: #1d4ed8 !important; 
+  border-radius: 0px !important;
+}
+
+body.theme-light::-webkit-scrollbar-track,
+.theme-light ::-webkit-scrollbar-track {
+  background-color: #cfc486 !important;
+}
+
+/* 2. Recharts SVG SVG Circle Sweeper (Catches all hover rings) */
+.theme-light .recharts-wrapper circle,
+.theme-light .recharts-layer circle,
+.theme-light .recharts-dot {
+  stroke: #1d4ed8 !important; 
+}
+
+.theme-light .recharts-active-dot circle {
+  stroke: #082f49 !important; /* Hard navy ring on hover */
+  stroke-width: 3px !important;
+  fill: #1d4ed8 !important;
+}
+
+/* Fix the broken card border on the Habit Tracker's scrolling header */
+.theme-light div.sticky.top-0.bg-black {
+  box-shadow: none !important;
+  border: none !important;
+  border-bottom: 2px solid #082f49 !important; /* Clean retro underline */
+  background-color: #dfd59e !important; /* Matches the card background */
+  
+  /* These two lines force the header to stretch all the way to Day 30 */
+  width: max-content !important; 
+  min-width: 100% !important;
+}
