@@ -77,7 +77,7 @@ const ExpenseManager = () => {
           type="submit"
           className="w-full bg-matrix-dim/20 border border-matrix-green text-matrix-green p-2 hover:bg-matrix-green hover:text-black transition-all font-bold tracking-wider uppercase mt-2"
         >
-          [ INIT_PAY & LOG ]
+          PAY & LOG
         </button>
       </form>
 
