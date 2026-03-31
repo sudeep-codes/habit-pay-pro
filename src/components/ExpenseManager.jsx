@@ -82,7 +82,7 @@ const ExpenseManager = () => {
       </form>
 
       <div className="flex-grow overflow-y-auto pr-2">
-        <h3 className="text-sm text-matrix-dim mb-2 uppercase">Recent Transmissions</h3>
+        <h3 className="text-sm text-matrix-dim mb-2 uppercase">Recent Transactions</h3>
         <ul className="space-y-2 text-sm">
           {expenses.slice(0, 5).map(exp => (
             <li key={exp.id} className="flex justify-between items-center border-b border-matrix-dim/30 pb-1">
