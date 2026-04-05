@@ -1,30 +1,30 @@
-# HabitP@y Terminal 📟
+# 🟩 HabitP@y Pro
 
-A futuristic, dual-theme React dashboard designed for seamless personal tracking. Built with Vite, React, and Tailwind CSS.
+> "Systems over goals. 1% better every day." 
 
-**Institution:** VIT Vellore  
-**Program:** B.Tech Computer Science Engineering (IoT)  
+**HabitP@y** is a specialized financial terminal designed to bridge the gap between daily habits and financial awareness. Inspired by James Clear's *Atomic Habits*, this tool simplifies expense tracking into a frictionless, high-speed protocol.
 
-## 👥 Development Team
-* **Sudeep Kumar Sahu** (24BCT0160)
-* **Vasu Agrawal** (24BCT0175)
-* **Asmit** (24BCT0043)
+[🚀 VIEW LIVE DEMO](https://your-vercel-link.vercel.app)
 
-## 🚀 Features
-* **Dual-Theme Protocol:** Instantly toggle between "Matrix Night Mode" and "Retro Industrial Day Mode".
-* **System Protocols (Habit Tracker):** A 30-day continuous grid to track daily micro-habits and ensure 1% daily improvement.
-* **Sleep Log:** Integrated Recharts data visualization to monitor sleep quality and average hours.
-* **To-Do List:** Real-time task manager with visual completion states.
-* **Expense Manager:** Financial tracker with direct Google Pay web integration for instant logging and payment initialization.
-* **Persistent Storage:** Fully integrated with local browser storage to prevent data loss on refresh.
+---
 
-## 🛠️ Tech Stack
-* **Frontend:** React.js, Vite
-* **Styling:** Tailwind CSS (Custom CDN Configuration)
-* **Data Visualization:** Recharts
-* **Icons:** Lucide-React
+## 🛠️ The System
+Unlike traditional trackers, HabitP@y utilizes a **Split-View Terminal** architecture:
+- **Command Console (40%):** Rapid input for categories and amounts.
+- **Data Log (60%):** Persistent, real-time transaction history and automated total aggregation.
 
-## 📦 Local Installation
-1. Clone the repository: `git clone <your-repo-link>`
-2. Install dependencies: `npm install`
-3. Start the terminal: `npm run dev`
+## ⚡ Tech Stack
+- **React.js** (Functional Components & Hooks)
+- **Tailwind CSS** (Custom Matrix-Retro Theme)
+- **Lucide Icons** (System Visuals)
+- **Vite** (Build Tool)
+
+## 📈 Roadmap (Solo Upgrades)
+- [ ] **Cloud Sync:** Migrating to Supabase for multi-device data persistence.
+- [ ] **Analytics:** Interactive spending charts using Recharts.
+- [ ] **Auth:** Secure user entry via Google OAuth.
+
+---
+Developed with 🟢 by **Sudeep Kumar Sahu**
+
+Note: This project originated as a group collaboration at VIT Vellore. This 'Pro' versiom represents the continued solo development and enhancement of the original concept.
