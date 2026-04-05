@@ -4,7 +4,7 @@
 
 **HabitP@y** is a specialized financial terminal designed to bridge the gap between daily habits and financial awareness. Inspired by James Clear's *Atomic Habits*, this tool simplifies expense tracking into a frictionless, high-speed protocol.
 
-[🚀 VIEW LIVE DEMO](https://your-vercel-link.vercel.app)
+[🚀 VIEW LIVE DEMO](https://habit-pay.vercel.app/)
 
 ---
 
